@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="utf-8">
+    <title>Kozak 3G</title>
+    <script language="JavaScript">
+        function WinOpen_z3() {
+            window.open("zadanie3_koz.html", "okienko_z3", "toolbar=no,directories=no,height=380,width=160,top=200,left=200");
+        }
+        function WinOpen_z4() {
+            window.open("z4_koza.html", "okienko_z4", "toolbar=no,directories=no,height=380,width=160,top=200,left=400");
+        }
+        function WinOpen_z5() {
+            window.open("zadanie5_koza.html", "okienko_z5", "toolbar=no,directories=no,height=380,width=160,top=200,left=400");
+        }
+        function okno_zamknij() {
+            window.close();
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        document.write("Szkielet zaliczeniowy JavaScript, wykonał: Kozak klasa 3G".fontcolor("#00FFFF").fontsize(6).bold() + "<br><br>");
+    </script>
+    <form>
+        <input type="button" value="zadanie3_Kozak" onclick="WinOpen_z3('')">
+        <input type="button" value="zadanie4_Kozak" onclick="WinOpen_z4('')">
+        <input type="button" value="zadanie5_Kozak" onclick="WinOpen_z5('')">
+        <input type="button" value="zamknij okno" onclick="okno_zamknij()">
+    </form>
+</body>
+
+</html>
