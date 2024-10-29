@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="utf-8">
+    <title>Kozak - Zadanie 5</title>
+    <script>
+        function openGraphic1() {
+            window.open("grafika1.jpg", "grafika1", "toolbar=no,directories=no,menubar=no,height=350,width=200,top=1000,left=300");
+        }
+        function openGraphic2() {
+            window.open("grafika2.jpg", "grafika2", "toolbar=no,directories=no,menubar=no,height=300,width=180,top=900,left=500");
+        }
+        function openGraphic3() {
+            window.open("grafika3.jpg", "grafika3", "toolbar=no,directories=no,menubar=no,height=320,width=210,top=800,left=700");
+        }
+        function openGraphic4() {
+            window.open("grafika4.jpg", "grafika4", "toolbar=no,directories=no,menubar=no,height=330,width=190,top=600,left=900");
+        }
+        function closeWindow() {
+            window.close();
+        }
+    </script>
+</head>
+
+<body>
+    <p style="color: red; font-size: 24px; font-weight: bold;">
+        wykonał: Kozak mój numer w dzienniku 15, czyli mam układ [(15) mod 4 = 3] układ 3
+    </p>
+    <div>
+        <input type="button" value="grafika1" onclick="openGraphic1()">
+        <input type="button" value="grafika2" onclick="openGraphic2()">
+        <input type="button" value="grafika3" onclick="openGraphic3()">
+        <input type="button" value="grafika4" onclick="openGraphic4()">
+    </div>
+    <br>
+    <div>
+        <input type="button" value="zamknij okno" onclick="closeWindow()">
+    </div>
+</body>
+
+</html>
