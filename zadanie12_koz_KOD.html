@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        function okno_zamknij_siejka() {
+            window.close()
+        }
+
+    </script>
+</head>
+
+<body>
+    <form>
+        <textarea name="siejka" cols="80" rows="20" readonly>
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zastosowanie: Obliczanie sekund między dniami i godzinami</title>
+    <script>
+        var D1_koz = prompt("Podaj pierwszy dzień (D1):", "");
+        var D2_koz = prompt("Podaj drugi dzień (D2):", "");
+        var G1_koz = prompt("Podaj godzinę dla pierwszego dnia (G1):", "");
+        var G2_koz = prompt("Podaj godzinę dla drugiego dnia (G2):", "");
+        var seconds;
+
+
+        var d1 = parseInt(D1_koz);
+        var d2 = parseInt(D2_koz);
+        var g1 = parseInt(G1_koz);
+        var g2 = parseInt(G2_koz);
+
+
+        var dayDifference = Math.abs(d1 - d2);
+        var hourDifference = Math.abs(g1 - g2);
+
+
+        seconds = (dayDifference * 24 * 60 * 60) + (hourDifference * 60 * 60);
+        document.write("Różnica między dniem " + d1 + " i dniem " + d2 + " z uwzględnieniem godzin wynosi " + seconds + " sekund.");
+    </script>
+</head>
+
+<body>
+    <h1>Zadanie 12: Obliczanie sekund między dwoma dniami i godzinami</h1>
+    <div style="color:green; font-size:24px;">
+        <p>Skrypt oblicza różnicę między dwoma dniami oraz godzinami i przelicza ją na sekundy.</p>
+    </div>
+
+    <h2><b>Zastosowanie:</b></h2>
+    <p>Skrypt oblicza różnicę między dwoma dniami i godzinami w styczniu oraz konwertuje ją na sekundach.</p>
+    <p>Obliczenia uwzględniają zarówno różnicę dni, jak i godzin pomiędzy dwoma punktami w czasie.</p>
+</body>
+
+</html>
+ </textarea>
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_siejka()" />
+    <script type="text/javascript">
+    </script>
+</body>
+
+</html>

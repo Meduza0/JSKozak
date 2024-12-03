@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rozkład ułamka egipskiego na trzy ułamki</title>
+    <script>
+        var m_koz = prompt("Podaj liczbę m (m > 0):", "");
+
+        var m = parseInt(m_koz);
+
+        var firstFraction = m + 2;
+        var secondFraction = m * (m + 2);
+        var thirdFraction = m * (m + 1);
+
+        document.write("Rozkład ułamka " + "1/" + m + " na trzy ułamki egipskie to: <br>");
+        document.write("1/" + m + " = " + "1/" + firstFraction + " + " + "1/" + secondFraction + " + " + "1/" + thirdFraction + "<br>");
+    </script>
+</head>
+
+<body>
+    <h1>Zadanie 14: Rozkład ułamka egipskiego na trzy ułamki</h1>
+
+    <h2><b>Zastosowanie:</b></h2>
+    <p>Skrypt oblicza rozkład ułamka egipskiego na trzy ułamki o postaci 1/m = 1/(m+2) + 1/(m*(m+2)) + 1/(m*(m+1)).</p>
+    <p>Podany ułamek m jest rozkładany na trzy inne ułamki egipskie.</p>
+</body>
+
+</html>

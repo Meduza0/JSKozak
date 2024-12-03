@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zastosowanie: Prompt Box</title>
+    <script>
+        function showPrompt() {
+            const name = prompt("Napisz imię", "Imię Nazwisko");
+            if (name !== null && name !== "") {
+                document.write("Witaj " + name + "! Jak się masz?");
+            } else {
+                document.write("Nie podałeś imienia.");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Zadanie 9: Prompt Box</h1>
+    <button onclick="showPrompt()">Pokaż Prompt Box</button>
+
+    <h2><b>Zastosowanie:</b></h2>
+    <p>Jest używany, gdy użytkownik musi wprowadzić dane, np. przed uzyskaniem dostępu do modułu strony.</p>
+    <p>Użytkownik może wpisać wartość, a następnie nacisnąć „OK” lub „Cancel”.</p>
+    <p>Jeśli naciśnie „OK”, metoda zwraca wprowadzoną wartość. W przeciwnym przypadku zwraca `null`.</p>
+</body>
+
+</html>

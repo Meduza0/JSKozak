@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zastosowanie: Confirm Box</title>
+    <script>
+        function showConfirm() {
+            const response = confirm("Naciśnij klawisz");
+            if (response) {
+                document.write("Nacisnąłeś OK!");
+            } else {
+                document.write("Nacisnąłeś Cancel!");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Zadanie 8: Confirm Box</h1>
+    <button onclick="showConfirm()">Pokaż Confirm Box</button>
+
+    <h2><b>Zastosowanie:</b></h2>
+    <p>Jest używany, jeśli chcemy zapytać użytkownika o weryfikację lub akceptację jakichś danych.</p>
+    <p>Użytkownik musi nacisnąć „OK”, aby potwierdzić, lub „Cancel”, aby odrzucić.</p>
+    <p>Jeżeli zostanie wybrane „OK”, metoda zwraca `true`. W przeciwnym wypadku zwraca `false`.</p>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        function okno_zamknij_siejka() {
+            window.close()
+        }
+
+    </script>
+</head>
+
+<body>
+    <form>
+        <textarea name="siejka" cols="80" rows="20" readonly>
+
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obliczenia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .result {
+            color: navy;
+            font-size: 1.2em;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+
+        let A = parseInt(prompt("Podaj pierwszą liczbę A:"));
+        let B = parseInt(prompt("Podaj drugą liczbę B:"));
+
+
+        let part1 = A ** 3;
+        let part2 = 3 * (A ** 2) * B;
+        let part3 = 3 * A * (B ** 2);
+        let part4 = B ** 3;
+
+
+        let wynik = part1 + part2 + part3 + part4;
+
+
+        let obliczenia = `(1 + ${A})^3 = ${A}^3 + 3*(${A}^2)*(${B}) + 3*(${A})*(${B}^2) + ${B}^3 <br>`;
+        obliczenia += `= ${part1} + ${part2} + ${part3} + ${part4} = ${wynik}`;
+
+
+        document.write(`<p>wczytane liczby: A=${A} B=${B}</p>`);
+        document.write(`<p class="result">${obliczenia}</p>`);
+    </script>
+</body>
+
+</html>
+
+ </textarea>
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_siejka()" />
+    <script type="text/javascript">
+    </script>
+</body>
+
+</html>
