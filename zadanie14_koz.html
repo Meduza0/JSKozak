@@ -6,16 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rozkład ułamka egipskiego na trzy ułamki</title>
     <script>
-        var m_koz = prompt("Podaj liczbę m (m > 0):", "");
+        var liczba1 = prompt("liczba1=","");
+        var m_koz = parseFloat(liczba1);
 
-        var m = parseInt(m_koz);
-
-        var firstFraction = m + 2;
-        var secondFraction = m * (m + 2);
-        var thirdFraction = m * (m + 1);
-
-        document.write("Rozkład ułamka " + "1/" + m + " na trzy ułamki egipskie to: <br>");
-        document.write("1/" + m + " = " + "1/" + firstFraction + " + " + "1/" + secondFraction + " + " + "1/" + thirdFraction + "<br>");
+        document.write("1/" + m_koz + "=");
+        document.write("1/" + (m_koz + 2) + "+");
+        document.write("1/" + (m_koz + 1) * (m_koz +2) + " + ");
+         document.write("1/" + m_koz * (m_koz +1) + " <br> ");
+        
     </script>
 </head>
 
