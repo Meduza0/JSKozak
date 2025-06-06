@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 46 - Kozak</title>
+</head>
+
+<body>
+    <div style="color:red; font-size:40px;">
+        <script>
+            var h_koz, a_koz;
+
+            do {
+                h_koz = parseFloat(prompt("Podaj wysokość h:", ""));
+            } while (h_koz <= 0);
+
+            do {
+                a_koz = parseFloat(prompt("Podaj podstawę a:", ""));
+            } while (!(a_koz > 0));
+
+            var pole_koz = (a_koz * h_koz) / 2;
+            document.write("Pole trójkąta = " + pole_koz.toFixed(2) + " cm²<br>");
+        </script>
+    </div>
+</body>
+
+</html>

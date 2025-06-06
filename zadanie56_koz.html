@@ -1,14 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
 
-  <!DOCTYPE html>
-  <html lang="pl">
-  <body>
-    <div style="color:red;font-size:18px;">
-      <script language="JavaScript">
-        for(i=0;i<=39;i++>{
-          w_fli=i*i+i+41;
-          document.write("w("+i+")="+"+w_fli+"<br>");
-                         }
-                         </script>
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 56 - Kozak</title>
+</head>
+
+<body>
+    <div style="font-size:18px; color:black;">
+        <script>
+            function czyPierwsza_koz(n_koz) {
+                if (n_koz < 2) return false;
+                for (var dzielnik_koz = 2; dzielnik_koz <= Math.sqrt(n_koz); dzielnik_koz++) {
+                    if (n_koz % dzielnik_koz == 0) return false;
+                }
+                return true;
+            }
+
+            var licznik_koz = 0;
+            for (var i_koz = 0; i_koz <= 39; i_koz++) {
+                var w_koz = i_koz * i_koz + i_koz + 41;
+                if (czyPierwsza_koz(w_koz)) {
+                    document.write("i=" + i_koz + " w(" + i_koz + ")=" + w_koz + "<br>");
+                    licznik_koz++;
+                }
+                if (licznik_koz % 5 == 0 && licznik_koz !== 0) {
+                    confirm("Kliknij OK, aby kontynuować...");
+                }
+            }
+        </script>
     </div>
-  </body>
+</body>
+
 </html>

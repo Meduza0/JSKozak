@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        function okno_zamknij_siejka() {
+            window.close()
+        }
+
+    </script>
+</head>
+<body>
+    <form>
+        <textarea name="siejka" cols="80" rows="20" readonly>
+
+
+
+
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 47 - Kozak</title>
+</head>
+
+<body>
+    <div style="color:blue; font-size:35px;">
+        <script>
+            var a_koz, b_koz, c_koz;
+            do {
+                a_koz = parseFloat(prompt("Podaj bok a:", ""));
+                b_koz = parseFloat(prompt("Podaj bok b:", ""));
+                c_koz = parseFloat(prompt("Podaj bok c:", ""));
+            } while (
+                !(a_koz > 0 && b_koz > 0 && c_koz > 0 &&
+                    a_koz + b_koz > c_koz &&
+                    a_koz + c_koz > b_koz &&
+                    b_koz + c_koz > a_koz)
+            );
+
+            document.write("Boki tworzą trójkąt: a=" + a_koz + ", b=" + b_koz + ", c=" + c_koz + "<br>");
+        </script>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+ </textarea>
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_siejka()" />
+    <script type="text/javascript">
+    </script>
+</body>
+
+</html>

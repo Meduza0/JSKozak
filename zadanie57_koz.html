@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 57 - Kozak</title>
+</head>
+
+<body>
+    <div style="font-size:18px; color:black;">
+        <script>
+            var licznik_koz = 0;
+            for (var i_koz = 15; i_koz <= 30; i_koz++) {
+                var pierw2_koz = Math.sqrt(i_koz);
+                var pierw4_koz = Math.sqrt(pierw2_koz);
+
+                document.write("i=" + i_koz +
+                    " pierw_2(" + i_koz + ")=" + pierw2_koz.toFixed(2) +
+                    " pierw_4(" + i_koz + ")=" + pierw4_koz.toFixed(2) + "<br>");
+                licznik_koz++;
+
+                if (licznik_koz % 3 === 0) {
+                    confirm("Kliknij OK, aby kontynuować...");
+                }
+            }
+        </script>
+    </div>
+</body>
+
+</html>
